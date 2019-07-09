@@ -1,0 +1,38 @@
+<!-- <div *ngFor="let j of arr2">
+    <div>
+Name:{{j.Firstname}} {{j.Lastname}}
+     <span id="c1">Age:{{j.Age}} Gender:{{j.Gender}}</span>
+<p>{{j.Email}}</p>
+
+<p>{{j.Fathername}}</p>
+<p>{{j.Address}}
+{{j.Contact}}</p>
+</div>
+</div> -->
+<br>
+<div class="column" *ngFor=" let j of arr2">
+            
+        <div class="card">
+          <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+          <div class="container">
+            <h2>{{j.Firstname}} {{j.Lastname}}</h2>
+            <p ><b>Age</b>:{{j.Age}}</p>
+            <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+            <p><b>Gender</b>:{{j.Gender}} </p>
+            <p><b>Email</b>:{{j.Email}}</p>
+            <p><b>Fathername</b>:{{j.Fathername}}</p>
+<p><b>Contact</b>:{{j.Contact}}</p>
+<p><b>Address</b>:{{j.Address}}</p>
+            <!-- <div *ngIf="flag==0"> -->
+                <!-- <div id="my"  [style.display]="style1"> 
+                    <div class="form-group">
+                       <label >Select Appointment date</label>
+                       <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app1">
+                     <label>Upload Prescription</label>
+                     <input type="image" class="form-control" id="app1"  name="app1" [(ngModel)]="app1"><button>Upload pic</button>
+                     </div>
+                   </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>

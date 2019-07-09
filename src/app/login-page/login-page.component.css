@@ -1,0 +1,12 @@
+.c1{
+  
+    position: relative;
+    left:42%;
+    top:150px;
+}
+input{
+    width:18%;
+}
+.bg-img{
+    background-image: ("assets/bcgimg.jpg");
+}

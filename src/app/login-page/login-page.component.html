@@ -1,0 +1,35 @@
+<!-- <br>
+<br>
+ <div style="border : 2px solid black; height:280px; margin-left: 350px; margin-right: 250px;">
+
+    <div><i class='fas fa-user-circle' style='font-size:48px;color:silver; position:relative;left:50%;'></i>
+    <br><br><br>
+    <div class="input-container c1">
+    <i class='fas fa-user-alt' style="font-size:20px; color:white; min-height: 20px; padding: 5px;background-color:black"></i><input type="email" name="username" placeholder="Username or Mobile no." [(ngModel)]="usr">
+</div>
+<br>
+<div class="input-container c1">
+    <i class='fa fa-key icon' style="font-size:20px; color:white; min-height: 20px; padding: 5px;background-color:black"></i><input type="password" name="pass" placeholder="Password" [(ngModel)]="pass">
+    
+</div>
+<br>
+
+<div>
+<button (click)="login()" style=" position:relative;left:42%;width:20%;">LOGIN</button>
+</div></div> -->
+<div class="c1 bg-img">
+        <i class='fas fa-user-circle' style='font-size:58px;color:silver; position:relative;left:7%;'></i><br>
+        <br>
+        <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" (keyup.enter)="login()" name="email" [(ngModel)]="usr">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" name="pwd" (keyup.enter)="login()" [(ngModel)]="pass">
+              </div>
+              <div class="checkbox ">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <button type="submit" (click)="login()"  class="btn btn-success">Submit</button>
+</div>

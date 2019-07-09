@@ -1,0 +1,16 @@
+<div class="c1 bg-img">
+    <i class='fas fa-user-circle' style='font-size:58px;color:silver; position:relative;left:7%;'></i><br>
+    <br>
+    <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="usr">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="pwd" [(ngModel)]="pass">
+          </div>
+          <div class="checkbox ">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" (click)="login()" class="btn btn-success">Submit</button>
+</div>

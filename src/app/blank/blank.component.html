@@ -1,0 +1,150 @@
+<!-- <div>
+  
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+ 
+ 
+</div> -->
+<br>
+      <!-- <div *ngFor=" let i of arr"> --><div class="row">
+        <div class="column" *ngFor=" let i of arr">
+            
+          <div class="card">
+            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>{{i.Lab_name}}</h2>
+              <p class="title">Owned By:{{i.Owner}}</p>
+              <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+              <p>{{i.Address}} </p>
+              <p>{{i.Rating}}/5</p>
+              <!-- <div *ngIf="flag==0"> -->
+                  <div id="my"  [style.display]="style1"> 
+                      <div class="form-group">
+                         <label >Select Appointment date</label>
+                         <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app1">
+                       <label>Upload Prescription</label>
+                       <input type="image" class="form-control" id="app1"  name="app1" [(ngModel)]="app1"><button>Upload pic</button>
+                       </div>
+                     </div>
+              <!-- </div> -->
+              <p><button class="button" (click)="menu(i)">BOOK APPOINTMENT</button></p>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    <!-- <div class="row" style="margin-left: 100px;"> -->
+        <!-- <div class="column">
+          <div class="card">
+            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>DEF Diagnostic lab</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <div>
+                  <div id="my"  [style.display]="style1"> 
+                      <div class="form-group">
+                         <label >Select Appointment date</label>
+                         <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app" required>
+                       <label>Upload Prescription</label>
+                       <input type="image" class="form-control" id="img"  name="img" [(ngModel)]="img" required><button>Upload pic</button>
+                       </div>
+                     </div>
+              </div>
+              <p><button class="button" (click)="menu()">BOOK APPOINTMENT</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+              <div class="container">
+                <h2>UVW Diagnostic lab</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <div id="my"  [style.display]="style1"> 
+                    <div class="form-group">
+                       <label >Select Appointment date</label>
+                       <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app" required>
+                     <label>Upload Prescription</label>
+                     <input type="image" class="form-control" id="img"  name="img" [(ngModel)]="img" required><button>Upload pic</button>
+                     </div>
+                   </div>
+                <p><button class="button" (click)="menu()">BOOK APPOINTMENT</button></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+    </div>
+    <!-- <div>
+        <div class="row" >
+            <div class="column">
+              <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Jane Doe</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>example@example.com</p>
+                  <div id="my"  [style.display]="style1"> 
+                      <div class="form-group">
+                         <label >Select Appointment date</label>
+                         <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app" required>
+                       <label>Upload Prescription</label>
+                       <input type="image" class="form-control" id="img"  name="img" [(ngModel)]="img" required><button>Upload pic</button>
+                       </div>
+                     </div>
+                  <p><button class="button" (click)="menu()">BOOK APPOINTMENT</button></p>
+                </div>
+              </div>
+            </div>
+         <div class="row" style="margin-left: 100px;"> -->
+            <!-- <div class="column">
+              <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Jane Doe</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>example@example.com</p>
+                  <div id="my"  [style.display]="style1"> 
+                      <div class="form-group">
+                         <label >Select Appointment date</label>
+                         <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app" required>
+                       <label>Upload Prescription</label>
+                       <input type="image" class="form-control" id="img"  name="img" [(ngModel)]="img" required><button>Upload pic</button>
+                       </div>
+                     </div>
+                  <p><button class="button" (click)="menu()">BOOK APPOINTMENT</button></p>
+                </div>
+              </div>
+            </div>
+            </div>
+    </div> -->
